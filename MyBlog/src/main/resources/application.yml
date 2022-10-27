@@ -30,8 +30,8 @@ spring:
         min-idle: 0
   mail:
     host: smtp.qq.com #发送邮件服务器
-    username: 2841385065@qq.com #网易邮箱
-    password: wjypbsiqarlldcja #客户端授权码
+    username: @qq.com #网易邮箱
+    password:  #客户端授权码
     protocol: smtp #发送邮件协议
     properties.mail.smtp.auth: true
     properties.mail.smtp.starttls.enable: true
