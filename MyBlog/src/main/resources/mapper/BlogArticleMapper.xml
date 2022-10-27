@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yuuko.MyBlog.mapper.BlogArticleMapper">
+
+    <resultMap id="BaseResultMap" type="com.yuuko.MyBlog.domain.BlogArticle">
+            <id property="tid" column="tid" jdbcType="VARCHAR"/>
+            <result property="uid" column="uid" jdbcType="VARCHAR"/>
+            <result property="title" column="title" jdbcType="VARCHAR"/>
+            <result property="context" column="context" jdbcType="VARCHAR"/>
+            <result property="likeNum" column="like_num" jdbcType="INTEGER"/>
+            <result property="watchNum" column="watch_num" jdbcType="INTEGER"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="disable" column="disable" jdbcType="INTEGER"/>
+            <result property="imgUrl" column="img_url" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        tid,uid,title,
+        context,like_num,watch_num,
+        create_time,update_time,disable,
+        img_url
+    </sql>
+</mapper>

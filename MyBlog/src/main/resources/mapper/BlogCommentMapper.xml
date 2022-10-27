@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yuuko.MyBlog.mapper.BlogCommentMapper">
+
+    <resultMap id="BaseResultMap" type="com.yuuko.MyBlog.domain.BlogComment">
+            <id property="cid" column="cid" jdbcType="VARCHAR"/>
+            <result property="tid" column="tid" jdbcType="VARCHAR"/>
+            <result property="uid" column="uid" jdbcType="VARCHAR"/>
+            <result property="fromCid" column="from_cid" jdbcType="VARCHAR"/>
+            <result property="context" column="context" jdbcType="VARCHAR"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        cid,tid,uid,
+        from_cid,context,update_time,
+        create_time
+    </sql>
+</mapper>
